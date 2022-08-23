@@ -24,9 +24,14 @@ rc : Read Pressure and Temperature continuously. Reading will stop when LF is re
 Command : rc &lt; CRLF &gt; <br>
 Reply : Pressure : &lt; Pressure Value &gt; &lt; Pressure Unit &gt; , Temperature : &lt; Temperature Value &gt;&lt; Temperature Unit &gt;&lt; CRLF &gt;
 
-rz : Read zero offset
+rz : Read zero offset adjust value stored in OFFSET_ADJ register. Factory default is 0x00<br>
+Command : rz &lt; CRLF &gt; <br>
+Reply : Offset : &lt; Offset Value &gt; &lt; Pressure Unit &gt; &lt; CRLF &gt;
 
 si : Set address to be read
+Command : si &lt; CRLF &gt; <br>
+Reply : Set Sensor Address to be read. Type address number and press Enter. <br>
+Send : &lt; Address to be read &gt; &lt; CRLF &gt; <br>
 
 ci : Change sensor address
 
