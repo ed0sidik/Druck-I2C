@@ -28,12 +28,17 @@ rz : Read zero offset adjust value stored in OFFSET_ADJ register. Factory defaul
 Command : rz &lt; CRLF &gt; <br>
 Reply : Offset : &lt; Offset Value &gt; &lt; Pressure Unit &gt; &lt; CRLF &gt;
 
-si : Set address to be read <br.
+si : Set address to be read <br>
 Command : si &lt; CRLF &gt; <br>
 Reply : Set Sensor Address to be read. Type address number and press Enter. <br>
 Send : &lt; Address to be read &gt; &lt; CRLF &gt; <br>
 Reply : Sensor Address Number to be read is &lt; Address to be read &gt; &lt; CRLF &gt; <br>
+(Address should be within the range 1 to 127)
 
-ci : Change sensor address
+ci : Change sensor address <br>
+Command : ci &lt; CRLF &gt; <br>
+Reply : Change Sensor Address. Type address number and press Enter. <br>
+Send : &lt; Sensor New Address &gt; &lt; CRLF &gt; <br>
+Reply : Sensor Address is changed to &lt; Sensor New Address &gt; &lt; CRLF &gt; <br>
 
 za : Adjust zero offset
