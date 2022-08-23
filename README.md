@@ -8,3 +8,4 @@ DPS5000-2.ino is sample code to read/write data from/to DPS5000-I2C pressure sen
 The library and sample code have been verified to work with Arduino UNO compatible Adafruit Metro Mini 328 board (ATmega328 chip).
 Below is the link to Adafruit board page.<br>
 www.adafruit.com/product/2590
+Since DPS5000-I2C logic level is 3.3V, please make sure the board logic level is adjusted to 3.3V. 
