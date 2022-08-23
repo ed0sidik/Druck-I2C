@@ -20,7 +20,9 @@ rt : Read Temperature<br>
 Command : rt &lt; CRLF &gt; <br>
 Reply : Temperature : &lt; Temperature Value &gt;&lt; Temperature Unit &gt;&lt; CRLF &gt;
 
-rc : Read Pressure and Temperature Continuously
+rc : Read Pressure and Temperature continuously. Reading will stop when LF is received (Enter button is pressed)<br>
+Command : rc &lt; CRLF &gt; <br>
+Reply : Pressure : &lt; Pressure Value &gt; &lt; Pressure Unit &gt; , Temperature : &lt; Temperature Value &gt;&lt; Temperature Unit &gt;&lt; CRLF &gt;
 
 rz : Read zero offset
 
