@@ -14,15 +14,15 @@ Serial Command List
 
 rp : Read Pressure<br>
 Command : rp &lt; CRLF &gt; <br>
-Reply : Pressure : &lt; Pressure Value &gt; &lt; Pressure Unit &gt; &lt; CRLF &gt;
+Reply : Pressure: &lt; Pressure Value &gt; &lt; Pressure Unit &gt; &lt; CRLF &gt;
 
 rt : Read Temperature<br>
 Command : rt &lt; CRLF &gt; <br>
-Reply : Temperature : &lt; Temperature Value &gt;&lt; Temperature Unit &gt;&lt; CRLF &gt;
+Reply : Temp: &lt; Temperature Value &gt;&lt; Temperature Unit &gt;&lt; CRLF &gt;
 
 rc : Read Pressure and Temperature continuously. Reading will stop when LF is received (Enter button is pressed)<br>
 Command : rc &lt; CRLF &gt; <br>
-Reply : Pressure : &lt; Pressure Value &gt; &lt; Pressure Unit &gt; , Temperature : &lt; Temperature Value &gt;&lt; Temperature Unit &gt;&lt; CRLF &gt;
+Reply : Pressure: &lt; Pressure Value &gt; &lt; Pressure Unit &gt; , Temp: &lt; Temperature Value &gt;&lt; Temperature Unit &gt;&lt; CRLF &gt;
 
 rz : Read zero offset adjust value stored in OFFSET_ADJ register. Factory default is 0x00 <br>
 Command : rz &lt; CRLF &gt; <br>
@@ -41,4 +41,11 @@ Reply : Change Sensor Address. Type address number and press Enter. <br>
 Send : &lt; Sensor New Address &gt; &lt; CRLF &gt; <br>
 Reply : Sensor Address is changed to &lt; Sensor New Address &gt; &lt; CRLF &gt; <br>
 
-za : Adjust zero offset
+za : Adjust zero offset <br>
+Command : za &lt; CRLF &gt; <br>
+Reply : Sensor zero adjustment <br>
+Reply : Zero offset will be erased, raw pressure reading will be displayed. <br>
+Reply : Pressure reading before adjustment is : &lt; Pressure Value &gt; &lt; Pressure Unit &gt; <br>
+Reply : Please type current reference pressure in bar and press Enter. <br>
+Send : &lt; Reference Pressure &gt; &lt; CRLF &gt; <br>
+(Interface board firmware will calculate the deviation and store this value to OFFSET_ADJ register) <br>
