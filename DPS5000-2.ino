@@ -55,7 +55,7 @@ void loop() {
       Serial.println(" degC");
     }
 
-    else if(input == "rc"){ // Read Pressure and Temperature Continously
+    else if(input == "rc"){ // Read Pressure and Temperature Continuously
       while(KeepReading){
         //Trigger a Reading
         dpsTrigger(DPS_ID);
