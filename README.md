@@ -3,7 +3,7 @@ Arduino library and sample code for communication with Druck's DPS5000-I2C press
 
 dps5000.h is library of register address.
 
-DPS5000-2.ino and DPS5000-3.ino are sample source code files to read/write data from/to DPS5000-I2C pressure sensor using terminal software.
+DPS5000-2.ino and DPS5000-3.ino are sample source code files to read/write data from/to DPS5000-I2C pressure sensor using terminal software, like TeraTerm.
 
 The library and DPS5000-2.ino sample source code file have been verified to work with Arduino UNO compatible Adafruit Metro Mini 328 board (ATmega328 chip).
 Below is link to Adafruit website.<br>
