@@ -6,10 +6,11 @@ dps5000.h is library of register address.
 DPS5000-2.ino and DPS5000-3.ino are sample source code files to read/write data from/to DPS5000-I2C pressure sensor using terminal software.
 
 The library and DPS5000-2.ino sample source code file have been verified to work with Arduino UNO compatible Adafruit Metro Mini 328 board (ATmega328 chip).
-Below is the link to Adafruit website.<br>
+Below is link to Adafruit website.<br>
 www.adafruit.com/product/2590 <br>
 
-DPS5000-3.ino will work with M5 Atom.<br>
+DPS5000-3.ino will work with M5 Atom. Below is link to M5 Atom website.<br>
+https://shop.m5stack.com/products/atom-lite-esp32-development-kit <br>
 
 Since DPS5000-I2C logic level is 3.3V, please make sure the board logic level is adjusted to 3.3V. 
 
